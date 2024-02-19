@@ -1,6 +1,16 @@
-# Modern E-commerce Back-End API
 
+<h1 align = "center"> Modern E-commerce Back-End API </h1>
 
+## Table of Contents
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Technologies Used](#technologies-used)
+- [Test Instruction](#test-instruction)
+- [Screenshot](#screenshot)
+- [Video](#video)
+- [Output](#output)
+- [Installation](#installation)
+- [License](#license)
 
 ## User Story
 ```md
@@ -23,3 +33,8 @@ THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
+
+## Technologies Used
+- JavaScript
+- MySQL
+- Node.js
