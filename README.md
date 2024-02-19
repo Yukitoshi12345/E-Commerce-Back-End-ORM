@@ -1,4 +1,4 @@
-![JavaScript](https://img.shields.io/badge/JavaScript-orange) ![MySQL](https://img.shields.io/badge/MySQL-lightgreen) ![Node.js](https://img.shields.io/badge/Node.js-blue) ![Express.js@4.18.2](https://img.shields.io/badge/Express.js@4.18.2-purple) ![MySQL2@3.9.1](https://img.shields.io/badge/MySQL2@3.9.1-yellow) ![Sequelize@6.37.1](https://img.shields.io/badge/Sequelize@6.37.1-lightblue) ![Dotenv@16.4.4](https://img.shields.io/badge/Dotenv@16.4.4-grey) 
+![JavaScript](https://img.shields.io/badge/JavaScript-orange) ![MySQL](https://img.shields.io/badge/MySQL-lightgreen) ![Node.js](https://img.shields.io/badge/Node.js-blue) ![Express.js@4.18.2](https://img.shields.io/badge/Express.js@4.18.2-purple) ![MySQL2@2.3.3](https://img.shields.io/badge/MySQL2@2.3.3-yellow) ![Sequelize@5.22.5](https://img.shields.io/badge/Sequelize@5.22.5-lightblue) ![Dotenv@8.6.0](https://img.shields.io/badge/Dotenv@8.6.0-grey) 
 
 <h1 align = "center"> Modern E-Commerce Back-End API </h1>
 
@@ -40,9 +40,9 @@ THEN I am able to successfully create, update, and delete data in my database
 - MySQL
 - Node.js
 - Express.js (version 4.18.2)
-- MySQL2 (version 3.9.1)
-- Sequelize (version 6.37.1)
-- Dotenv (version 16.4.4)
+- MySQL2 (version 2.3.3)
+- Sequelize (version 5.22.5)
+- Dotenv (version 8.6.0)
 
 ## Test Instruction
 #### Command to Install Node:
