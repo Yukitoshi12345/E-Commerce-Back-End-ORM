@@ -63,3 +63,7 @@ npm i mysql2
 ![]()
 
 ## Output 
+
+## Installation
+The project was uploaded to [GitHub](https://github.com/) at the following repository:
+[https://github.com/yukitoshi12345/Modern-E-Commerce-Back-End-API/](https://github.com/yukitoshi12345/Modern-E-Commerce-Back-End-API)
