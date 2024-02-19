@@ -67,3 +67,6 @@ npm i mysql2
 ## Installation
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
 [https://github.com/yukitoshi12345/Modern-E-Commerce-Back-End-API/](https://github.com/yukitoshi12345/Modern-E-Commerce-Back-End-API)
+
+## License
+This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/Modern-E-Commerce-Back-End-API/blob/main/LICENSE).
