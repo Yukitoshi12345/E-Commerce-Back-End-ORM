@@ -38,3 +38,28 @@ THEN I am able to successfully create, update, and delete data in my database
 - JavaScript
 - MySQL
 - Node.js
+
+## Test Instruction
+#### Command to Install Node:
+ `
+npm install
+`
+
+#### Command to install Express dependencies:
+`
+npm i express
+`
+
+#### Command to install MySQL2 dependencies:
+`
+npm i mysql2
+`
+
+## Screenshot
+![]()
+
+
+## Video
+![]()
+
+## Output 
