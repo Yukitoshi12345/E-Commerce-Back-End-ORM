@@ -4,8 +4,6 @@ const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
-// Define associations between models using Sequelize methods
-
 // Products belongsTo Category
 // Belongs to one **Category** model (one-to-many relationship)
 Product.belongsTo(Category);
