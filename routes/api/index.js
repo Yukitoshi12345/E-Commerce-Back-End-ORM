@@ -1,5 +1,6 @@
 // Import the Express Router module to create a router instance
 const router = require('express').Router();
+
 // Import routes defined in separate files for different resource categories
 const categoryRoutes = require('./category-routes'); // Contains routes for managing categories
 const productRoutes = require('./product-routes'); // Contains routes for managing products
