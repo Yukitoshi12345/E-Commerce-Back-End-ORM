@@ -34,6 +34,7 @@ const seedAll = async () => {
 
     // Exit the process with a success code
     process.exit(0);
+    
   } catch (error) {
     console.error('Error during seeding process:', error);
     process.exit(1); // Exit with an error code
