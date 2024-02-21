@@ -46,8 +46,8 @@ THEN I am able to successfully create, update, and delete data in my database
 - Dotenv (version 16.4.4)
 
 ## Test Instruction
-#### Command to Install Node:
- `
+#### Command to install packages and any packages it depends on:
+`
 npm install
 `
 
