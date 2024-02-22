@@ -1,5 +1,6 @@
-// Import required modules
+// Import the Express Router module to create a router instance
 const router = require('express').Router();
+// Import Tag, Product, and ProductTag models from the models directory
 const { Tag, Product, ProductTag } = require('../../models');
 
 // Create a router for handling API requests for tags
