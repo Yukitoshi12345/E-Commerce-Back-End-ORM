@@ -1,6 +1,6 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-orange) ![Node.js](https://img.shields.io/badge/Node.js-blue) ![Express.js@4.18.2](https://img.shields.io/badge/Express.js@4.18.2-purple) ![MySQL2@3.9.1](https://img.shields.io/badge/MySQL2@3.9.1-lightgreen) ![Sequelize@6.37.1](https://img.shields.io/badge/Sequelize@6.37.1-lightblue) ![Dotenv@16.4.4](https://img.shields.io/badge/Dotenv@16.4.4-grey)
 
-<h1 align = "center"> Modern E-Commerce Back-End API </h1>
+<h1 align = "center">E-Commerce Back-End ORM </h1>
 
 As an internet retail manager, you understand the fierce competition in the e-commerce landscape. To stay ahead of the curve, you need a cutting-edge backend for your website. This document outlines the development of a robust backend using the latest technologies, allowing your company to thrive against online rivals. Leveraging the popular Express.js framework and the industry-standard Sequelize library, this backend will establish a seamless connection with your MySQL database. Not only will this setup ensure swift data processing, but it's also designed to be developer-friendly, adhering to clear acceptance criteria. From effortlessly establishing database connections to efficiently managing categories, products, and tags through intuitive API routes, this backend empowers your team to focus on innovation while delivering a captivating customer experience. Let's unlock the potential of your e-commerce website with this modern and adaptable backend solution.
 
