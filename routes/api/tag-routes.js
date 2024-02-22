@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
     const tagData = await Tag.findAll({
       include: [Product] // Include related Products in the response
     });
-    // Send successful response with atatus code 200 and the tag data
+    // Send successful response with status code 200 and the tag data
     res.status(200).json(tagData); 
   } catch (error) {
     // Log any errors and send 500 internal server error response

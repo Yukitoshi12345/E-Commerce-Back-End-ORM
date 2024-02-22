@@ -1,18 +1,51 @@
+// Import the Express Router module to create a router instance
 const router = require('express').Router();
+// Import Category, Product, Tag, ProductTag models from the models directory
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
-// The `/api/products` endpoint
+// Create a router for handling API requests for tags
 
-// get all products
-router.get('/', (req, res) => {
+// GET /api/product
+// Fetches all product, including their associated Category and Tag data.
+router.get('/', async (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
+
+  // Get all products with their associated Category and Tag using Sequelize include option
+  try {
+    const productData = await Product.findAll({
+      include: [Category, Tag] // Include related Category and Tag in the response
+    });
+    // Send successful response with status code 200 and the product data
+    res.status(200).json(productData);
+  } catch (error) {
+    // Log any errors and send 500 internal server error response
+    console.log(error);
+    res.status(500).json(error);
+  }
 });
 
 // get one product
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
+  try {
+    const productData = await Product.findByPk(req.params.id, {
+      include: [Category, Tag]
+    });
+
+    // If no product found, send not found response and exit
+    if (!productData) {
+      res.status(400).json({ message: 'No product found with this id!' });
+      return;
+    }
+    // Send successful response with status code 200 and the product data
+    res.status(200).json(productData);
+  } catch (error) {
+    // Log any errors and send 500 internal server error response
+    console.log(error);
+    res.status(500).json(error);
+  }
 });
 
 // create new product
