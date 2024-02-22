@@ -66,6 +66,7 @@ router.post('/', async (req, res) => {
 // Updates a tag's name by its ID
 router.put('/:id', async (req, res) => {
   // update a tag's name by its `id` value
+  // Update the tag with the provided id using Sequelize update method
   try {
     const tagData = await Tag.update(req.body, {
       where: {
@@ -94,7 +95,7 @@ router.put('/:id', async (req, res) => {
 // Deletes a tag by its ID
 router.delete('/:id', async (req, res) => {
 
-  // Update the tag with the provided id using Sequelize update method
+  // Update the tag with the provided id using Sequelize destroy method
   try {
     const tagData = await Tag.destroy({
       where: {

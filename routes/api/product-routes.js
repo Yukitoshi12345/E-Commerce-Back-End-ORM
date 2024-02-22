@@ -80,6 +80,9 @@ router.get('/:id', async (req, res) => {
 //     });
 // });
 
+// POST /api/product
+// Creates a new product
+
 // Using async and await
 // Create new product
 router.post('/', async (req, res) => {
@@ -99,9 +102,10 @@ router.post('/', async (req, res) => {
       await ProductTag.bulkCreate(productTagIdArr);
     }
 
-    // Send successful response with product data
-    res.status(200).json(product);
+    // Send successful response with status code 200 and the new product data
+    res.status(200).json(productData);
   } catch (error) {
+    // Log any errors and send 400 bad request response
     console.error(error);
     res.status(400).json(error);
   }
