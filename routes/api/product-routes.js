@@ -51,37 +51,37 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// // create new product
-// router.post('/', (req, res) => {
-//   /* req.body should look like this...
-//     {
-//       product_name: "Basketball",
-//       price: 200.00,
-//       stock: 3,
-//       tagIds: [1, 2, 3, 4]
-//     }
-//   */
-//   Product.create(req.body)
-//     .then((product) => {
-//       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
-//       if (req.body.tagIds.length) {
-//         const productTagIdArr = req.body.tagIds.map((tag_id) => {
-//           return {
-//             product_id: product.id,
-//             tag_id,
-//           };
-//         });
-//         return ProductTag.bulkCreate(productTagIdArr);
-//       }
-//       // if no product tags, just respond
-//       res.status(200).json(product);
-//     })
-//     .then((productTagIds) => res.status(200).json(productTagIds))
-//     .catch((err) => {
-//       console.log(err);
-//       res.status(400).json(err);
-//     });
-// });
+// create new product
+router.post('/', (req, res) => {
+  /* req.body should look like this...
+    {
+      product_name: "Basketball",
+      price: 200.00,
+      stock: 3,
+      tagIds: [1, 2, 3, 4]
+    }
+  */
+  Product.create(req.body)
+    .then((product) => {
+      // if there's product tags, we need to create pairings to bulk create in the ProductTag model
+      if (req.body.tagIds.length) {
+        const productTagIdArr = req.body.tagIds.map((tag_id) => {
+          return {
+            product_id: product.id,
+            tag_id,
+          };
+        });
+        return ProductTag.bulkCreate(productTagIdArr);
+      }
+      // if no product tags, just respond
+      res.status(200).json(product);
+    })
+    .then((productTagIds) => res.status(200).json(productTagIds))
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json(err);
+    });
+});
 
 // POST /api/product
 // Creates a new product
@@ -90,32 +90,32 @@ router.get('/:id', async (req, res) => {
 // Create new product
 // POST /api/product
 // Creates a new product
-router.post('/', async (req, res) => {
-  try {
+// router.post('/', async (req, res) => {
+//   try {
 
-    // Update the product with the provided id using Sequelize create method
-    const productData = await Product.create(req.body);
+//     // Update the product with the provided id using Sequelize create method
+//     const productData = await Product.create(req.body);
 
-    // Check if any product tags are provided
-    if (req.body.tagIds.length) {
-      // Create an array of product-tag associations
-      const productTagIdArr = req.body.tagIds.map((tagId) => ({
-        product_id: product.id,
-        tag_id: tagId,
-      }));
+//     // Check if any product tags are provided
+//     if (req.body.tagIds.length) {
+//       // Create an array of product-tag associations
+//       const productTagIdArr = req.body.tagIds.map((tagId) => ({
+//         product_id: Product.id,
+//         tag_id: tagId,
+//       }));
 
-      // Bulk create product-tag associations
-      await ProductTag.bulkCreate(productTagIdArr);
-    }
+//       // Bulk create product-tag associations
+//       await ProductTag.bulkCreate(productTagIdArr);
+//     }
 
-    // Send successful response with status code 200 and the new product data
-    res.status(200).json(productData);
-  } catch (error) {
-    // Log any errors and send 400 bad request response
-    console.error(error);
-    res.status(400).json(error);
-  }
-});
+//     // Send successful response with status code 200 and the new product data
+//     res.status(200).json(productData);
+//   } catch (error) {
+//     // Log any errors and send 400 bad request response
+//     console.error(error);
+//     res.status(400).json(error);
+//   }
+// });
 
 // update product
 // router.put('/:id', (req, res) => {
