@@ -73,7 +73,12 @@ npm i dotenv
 ## Video
 A walk through video is [here](link).
 
-![](/assets/videos/screenrecord.gif)
+These are the commands you need to run to start the server:
+![](/assets/videos/commands.gif)
+
+This demonstrates testing API GET, POST, PUT, and DELETE routes using Insomnia:
+
+![](/assets/videos/insomnia.gif)
 
 ## Output 
 Here's a step-by-step guide to setting up your e-commerce API:
