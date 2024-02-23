@@ -9,6 +9,7 @@ As an internet retail manager, you understand the fierce competition in the e-co
 - [Acceptance Criteria](#acceptance-criteria)
 - [Technologies Used](#technologies-used)
 - [Test Instruction](#test-instruction)
+- [Installation Instruction](#installation-instruction)
 - [Video](#video)
 - [Output](#output)
 - [Installation](#installation)
@@ -43,6 +44,11 @@ THEN I am able to successfully create, update, and delete data in my database
 - MySQL2 (version 3.9.1)
 - Sequelize (version 6.37.1)
 - Dotenv (version 16.4.4)
+
+## Installation Instruction
+- [Install nodejs and npm](https://nodejs.org/en/download) 
+- [Install MySQL](https://dev.mysql.com/downloads/mysql/)
+- [Install Insomnia](https://insomnia.rest/download)
 
 ## Test Instruction
 #### Command to install packages and any packages it depends on:
