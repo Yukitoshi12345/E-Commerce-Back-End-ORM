@@ -176,6 +176,10 @@ router.put('/:id', async (req, res) => {
       },
     });
 
+    const updatedProductData = await Product.findByPk(req.params.id, {
+      include: [Category, Tag]
+    });
+
     // Check if tag IDs are provided in the request body
     if (req.body.tagIds && req.body.tagIds.length) {
       // Find existing product tags
@@ -206,7 +210,7 @@ router.put('/:id', async (req, res) => {
     }
 
     // Send successful response with updated product data
-    res.json(productData);
+    res.json(updatedProductData);
   } catch (error) {
     // Log any errors and send 400 bad request response
     console.error(error);

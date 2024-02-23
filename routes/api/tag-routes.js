@@ -74,6 +74,11 @@ router.put('/:id', async (req, res) => {
         id: req.params.id,
       },
     });
+
+    // Retrieve the updated tag data to send in the response
+    const updatedTagData = await Tag.findByPk(req.params.id, {
+      include: [Product]
+    });
     
     // Check if any rows were affected by the update (indicates update success)
     if (!tagData[0]) {
@@ -83,7 +88,7 @@ router.put('/:id', async (req, res) => {
       return;
     }
     // Send successful response with status code 200 and the new tag data
-    res.status(200).json(tagData);
+    res.status(200).json(updatedTagData);
   } catch (error) {
     // Log any errors and send 500 internal server error response
     console.log(error);

@@ -47,7 +47,9 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   // Create a new category using Sequelize create method with data from request body
   try {
+    // Create the new category
     const categoryData = await Category.create(req.body);
+
     // Send successful response with status code 200 and the new category data
     res.status(200).json(categoryData);
   } catch (error) {
@@ -68,6 +70,11 @@ router.put('/:id', async (req, res) => {
       },
     });
     
+    // Retrieve the updated category data to send in the response
+    const updatedCategoryData = await Category.findByPk(req.params.id, {
+      include: [Product]
+    });
+
     // Check if any rows were affected by the update (indicates update success)
     if (!categoryData[0]) {
       // If no category was found with the provided ID, send a 404 Not Found response
@@ -76,7 +83,7 @@ router.put('/:id', async (req, res) => {
       return;
     }
     // Send successful response with status code 200 and the new category data
-    res.status(200).json(categoryData);
+    res.status(200).json(updatedCategoryData);
   } catch (error) {
     // Log any errors and send 500 internal server error response
     console.log(error);

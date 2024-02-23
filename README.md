@@ -9,7 +9,6 @@ As an internet retail manager, you understand the fierce competition in the e-co
 - [Acceptance Criteria](#acceptance-criteria)
 - [Technologies Used](#technologies-used)
 - [Test Instruction](#test-instruction)
-- [Screenshot](#screenshot)
 - [Video](#video)
 - [Output](#output)
 - [Installation](#installation)
@@ -60,10 +59,6 @@ npm i express
 `
 npm i mysql2
 `
-
-## Screenshot
-![]()
-
 
 ## Video
 ![]()
