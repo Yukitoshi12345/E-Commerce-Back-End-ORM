@@ -71,7 +71,7 @@ npm i dotenv
 `
 
 ## Video
-
+A walk through video is [here](https://youtu.be/RTK5aaScofQ).
 
 <br>
 
