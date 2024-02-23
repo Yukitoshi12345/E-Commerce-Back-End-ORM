@@ -104,7 +104,7 @@ Here's a step-by-step guide to setting up your e-commerce API:
 
 ## Installation
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
-[https://github.com/yukitoshi12345/Modern-E-Commerce-Back-End-API/](https://github.com/yukitoshi12345/Modern-E-Commerce-Back-End-API)
+[https://github.com/yukitoshi12345/E-Commerce-Back-End-ORM/](https://github.com/yukitoshi12345/E-Commerce-Back-End-ORM)
 
 ## License
-This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/Modern-E-Commerce-Back-End-API/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/E-Commerce-Back-End-ORM/blob/main/LICENSE).
