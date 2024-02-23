@@ -71,12 +71,18 @@ npm i dotenv
 `
 
 ## Video
-A walk through video is [here](link).
+
+
+<br>
 
 These are the commands you need to run to start the server:
+
 ![](/assets/videos/commands.gif)
 
+<br>
+
 This demonstrates testing API GET, POST, PUT, and DELETE routes using Insomnia:
+
 
 ![](/assets/videos/insomnia.gif)
 
