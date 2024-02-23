@@ -60,6 +60,16 @@ npm i express
 npm i mysql2
 `
 
+#### Command to install Sequelize dependencies:
+`
+npm i sequelize
+`
+
+#### Command to install Dotenv dependencies:
+`
+npm i dotenv
+`
+
 ## Video
 A walk through video is [here](link).
 
@@ -68,25 +78,25 @@ A walk through video is [here](link).
 ## Output 
 Here's a step-by-step guide to setting up your e-commerce API:
 
-1. Configure Database Credentials:
+<b> Configure Database Credentials: </b>
 
 - Open the .env.copy file and rename it to .env.
 - Locate the placeholders for your MySQL password. Replace them with your actual credentials.
 
-2. Create the Database Schema:
+<b> Create the Database Schema: </b>
 
 - Open your integrated terminal within the db folder.
 - Type mysql -u root -p and enter the password you set in the .env file.
 - Execute the source schema.sql command within the terminal. This creates the database schema based on your defined structure.
 
-3. Start the Server and Connect to Database:
+<b> Start the Server and Connect to Database: </b>
 
 - Open your integrated terminal within the project directory.
 - Install the required dependencies: npm i express mysql2 sequelize dotenv.
 - Run npm run seed to populate your database with test data.
 - Finally, start the server by running npm start. This will invoke the Express.js API and connect it to the MySQL database using Sequelize.
 
-4. Test Your API Endpoints:
+<b> Test Your API Endpoints: </b>
 
 - Use Insomnia to test your API routes.
 - Open GET routes for categories, products, and tags. Verify that the data is displayed in well-formatted JSON, matching your acceptance criteria.
