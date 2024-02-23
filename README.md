@@ -61,7 +61,7 @@ npm i mysql2
 `
 
 ## Video
-![]()
+![](/assets/videos/screenrecord.gif)
 
 ## Output 
 
