@@ -1,10 +1,10 @@
 // Import the Express library to create the web application
-const express = require('express');
+const express = require("express");
 // Import all routes defined in a separate file named "routes.js"
-const routes = require('./routes');
+const routes = require("./routes");
 
 // Import the sequelize connection from the configuration file
-const sequelize = require('./config/connection')
+const sequelize = require("./config/connection");
 
 // Create an Express application instance
 const app = express();
@@ -20,7 +20,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // Turn on connection to database and server
-sequelize.sync({ force: false }) // Set force: true to drop and recreate tables (caution!)
+sequelize
+  .sync({ force: false }) // Set force: true to drop and recreate tables (caution!)
   .then(() => {
     app.listen(PORT, () => {
       console.log(`App listening on port ${PORT}!`);
