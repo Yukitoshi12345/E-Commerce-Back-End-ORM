@@ -5,6 +5,7 @@
 As an internet retail manager, you understand the fierce competition in the e-commerce landscape. To stay ahead of the curve, you need a cutting-edge backend for your website. This document outlines the development of a robust backend using the latest technologies, allowing your company to thrive against online rivals. Leveraging the popular Express.js framework and the industry-standard Sequelize library, this backend will establish a seamless connection with your MySQL database. Not only will this setup ensure swift data processing, but it's also designed to be developer-friendly, adhering to clear acceptance criteria. From effortlessly establishing database connections to efficiently managing categories, products, and tags through intuitive API routes, this backend empowers your team to focus on innovation while delivering a captivating customer experience. Let's unlock the potential of your e-commerce website with this modern and adaptable backend solution.
 
 ## Table of Contents
+
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Technologies Used](#technologies-used)
@@ -16,6 +17,7 @@ As an internet retail manager, you understand the fierce competition in the e-co
 - [License](#license)
 
 ## User Story
+
 ```md
 AS A manager at an internet retail company
 I WANT a back end for my e-commerce website that uses the latest technologies
@@ -23,6 +25,7 @@ SO THAT my company can compete with other e-commerce companies
 ```
 
 ## Acceptance Criteria
+
 ```md
 GIVEN a functional Express.js API
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
@@ -38,6 +41,7 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 
 ## Technologies Used
+
 - JavaScript
 - Node.js
 - Express.js (version 4.18.2)
@@ -46,37 +50,35 @@ THEN I am able to successfully create, update, and delete data in my database
 - Dotenv (version 16.4.4)
 
 ## Installation Instruction
-- [Install nodejs and npm](https://nodejs.org/en/download) 
+
+- [Install nodejs and npm](https://nodejs.org/en/download)
 - [Install MySQL](https://dev.mysql.com/downloads/mysql/)
 - [Install Insomnia](https://insomnia.rest/download)
 
 ## Test Instruction
+
 #### Command to install packages and any packages it depends on:
-`
-npm install
-`
+
+`npm install`
 
 #### Command to install Express dependencies:
-`
-npm i express
-`
+
+`npm i express`
 
 #### Command to install MySQL2 dependencies:
-`
-npm i mysql2
-`
+
+`npm i mysql2`
 
 #### Command to install Sequelize dependencies:
-`
-npm i sequelize
-`
+
+`npm i sequelize`
 
 #### Command to install Dotenv dependencies:
-`
-npm i dotenv
-`
+
+`npm i dotenv`
 
 ## Video
+
 A walk through video is [here](https://youtu.be/RTK5aaScofQ).
 
 <br>
@@ -89,10 +91,10 @@ These are the commands you need to run to start the server:
 
 This demonstrates testing API GET, POST, PUT, and DELETE routes using Insomnia:
 
-
 ![](/assets/videos/insomnia.gif)
 
-## Output 
+## Output
+
 Here's a step-by-step guide to setting up your e-commerce API:
 
 <b> Configure Database Credentials: </b>
@@ -120,8 +122,10 @@ Here's a step-by-step guide to setting up your e-commerce API:
 - Test POST, PUT, and DELETE routes to create, update, and delete data. Ensure these actions are successfully reflected in your database.
 
 ## Installation
+
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
 [https://github.com/yukitoshi12345/E-Commerce-Back-End-ORM/](https://github.com/yukitoshi12345/E-Commerce-Back-End-ORM)
 
 ## License
+
 This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/E-Commerce-Back-End-ORM/blob/main/LICENSE).
