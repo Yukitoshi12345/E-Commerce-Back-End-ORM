@@ -1,9 +1,8 @@
 // Import ProductTag model from the models directory
-const { ProductTag } = require('../models');
+const { ProductTag } = require("../models");
 
 // Define an array of objects representing seed data for product tag associations
 const productTagData = [
-
   // Associate product_id 1 with tags 6, 7, and 8
   {
     product_id: 1,
