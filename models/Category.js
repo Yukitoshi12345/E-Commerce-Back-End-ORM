@@ -1,8 +1,8 @@
 // Import the Sequelize Model and DataTypes objects from the 'sequelize' library
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require("sequelize");
 
 // Import the sequelize instance from the '../config/connection.js' file
-const sequelize = require('../config/connection');
+const sequelize = require("../config/connection");
 
 // Define the Category model using the Sequelize Model class
 class Category extends Model {}
@@ -14,12 +14,12 @@ Category.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     category_name: {
       type: DataTypes.STRING,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   },
   {
     // Associate the model with the sequelize instance
@@ -31,7 +31,7 @@ Category.init(
     // Use underscores instead of camelCase for field names
     underscored: true,
     // Set the model name to 'category'
-    modelName: 'category',
+    modelName: "category",
   }
 );
 

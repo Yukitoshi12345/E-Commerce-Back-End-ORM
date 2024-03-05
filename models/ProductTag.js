@@ -1,8 +1,8 @@
 // Import the Sequelize Model and DataTypes objects from the 'sequelize' library
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require("sequelize");
 
 // Import the sequelize instance from the '../config/connection.js' file
-const sequelize = require('../config/connection');
+const sequelize = require("../config/connection");
 
 // Define the ProductTag model using the Sequelize Model class
 class ProductTag extends Model {}
@@ -14,22 +14,22 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'product',
-        key: 'id'
-      }
+        model: "product",
+        key: "id",
+      },
     },
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'tag',
-        key: 'id'
-      }
-    }
+        model: "tag",
+        key: "id",
+      },
+    },
   },
   {
     // Associate the model with the sequelize instance
@@ -41,7 +41,7 @@ ProductTag.init(
     // Use underscores instead of camelCase for field names
     underscored: true,
     // Set the model name to 'product_tag'
-    modelName: 'product_tag',
+    modelName: "product_tag",
   }
 );
 

@@ -1,8 +1,8 @@
 // Import the Sequelize Model and DataTypes objects from the 'sequelize' library
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require("sequelize");
 
 // Import the sequelize instance from the '../config/connection.js' file
-const sequelize = require('../config/connection.js');
+const sequelize = require("../config/connection.js");
 
 // Define the Tag model using the Sequelize Model class
 class Tag extends Model {}
@@ -14,11 +14,11 @@ Tag.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     tag_name: {
-      type: DataTypes.STRING
-    }
+      type: DataTypes.STRING,
+    },
   },
   {
     // Associate the model with the sequelize instance
@@ -30,7 +30,7 @@ Tag.init(
     // Use underscores instead of camelCase for field names
     underscored: true,
     // Set the model name to 'tag'
-    modelName: 'tag',
+    modelName: "tag",
   }
 );
 

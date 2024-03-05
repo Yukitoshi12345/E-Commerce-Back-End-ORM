@@ -1,8 +1,8 @@
-// Import the Sequelize Model and DataTypes objects from the 'sequelize' library 
-const { Model, DataTypes } = require('sequelize');
+// Import the Sequelize Model and DataTypes objects from the 'sequelize' library
+const { Model, DataTypes } = require("sequelize");
 
 // Import the sequelize instance from the '../config/connection.js' file
-const sequelize = require('../config/connection');
+const sequelize = require("../config/connection");
 
 // Define the Product model using the Sequelize Model class
 class Product extends Model {}
@@ -21,7 +21,7 @@ Product.init(
       allowNull: false,
     },
     price: {
-      type: DataTypes.DECIMAL(10,2),
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
       validate: {
         isDecimal: true,
@@ -53,7 +53,7 @@ Product.init(
     // Use underscores instead of camelCase for field names
     underscored: true,
     // Set the model name to 'product'
-    modelName: 'product',
+    modelName: "product",
   }
 );
 
