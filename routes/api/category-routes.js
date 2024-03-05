@@ -1,16 +1,16 @@
 // Import the Express Router module to create a router instance
-const router = require('express').Router();
+const router = require("express").Router();
 // Import Category and Product models from the models directory
-const { Category, Product } = require('../../models');
+const { Category, Product } = require("../../models");
 
 // The `/api/categories` endpoint
 
 // Base endpoint for accessing categories
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
   // Get all categories with their associated products using Sequelize include option
   try {
     const categoryData = await Category.findAll({
-      include: [Product]
+      include: [Product],
     });
     // Send successful response with status code 200 and the category data
     res.status(200).json(categoryData);
@@ -22,16 +22,16 @@ router.get('/', async (req, res) => {
 });
 
 // Endpoint to get a specific category by its id
-router.get('/:id', async (req, res) => {
+router.get("/:id", async (req, res) => {
   // Find the category by id with associated products using Sequelize findByPk
   try {
     const categoryData = await Category.findByPk(req.params.id, {
-      include: [Product]
+      include: [Product],
     });
 
     // If no category found, send not found response and exit
     if (!categoryData) {
-      res.status(404).json({ message: 'No categories found with this id!' });
+      res.status(404).json({ message: "No categories found with this id!" });
       return;
     }
     // Send successful response with status code 200 and the category data
@@ -44,7 +44,7 @@ router.get('/:id', async (req, res) => {
 });
 
 // Endpoint to create a new category
-router.post('/', async (req, res) => {
+router.post("/", async (req, res) => {
   // Create a new category using Sequelize create method with data from request body
   try {
     // Create the new category
@@ -60,7 +60,7 @@ router.post('/', async (req, res) => {
 });
 
 // Endpoint to update a category by its id
-router.put('/:id', async (req, res) => {
+router.put("/:id", async (req, res) => {
   // Update the category with the provided id using Sequelize update method
   try {
     const categoryData = await Category.update(req.body, {
@@ -69,16 +69,16 @@ router.put('/:id', async (req, res) => {
         id: req.params.id,
       },
     });
-    
+
     // Retrieve the updated category data to send in the response
     const updatedCategoryData = await Category.findByPk(req.params.id, {
-      include: [Product]
+      include: [Product],
     });
 
     // Check if any rows were affected by the update (indicates update success)
     if (!categoryData[0]) {
       // If no category was found with the provided ID, send a 404 Not Found response
-      res.status(404).json({ message: 'No category found with this id!' });
+      res.status(404).json({ message: "No category found with this id!" });
       // Exit the function early to avoid sending a success response
       return;
     }
@@ -92,18 +92,18 @@ router.put('/:id', async (req, res) => {
 });
 
 // Endpoint to delete a category by its ID
-router.delete('/:id', async (req, res) => {
+router.delete("/:id", async (req, res) => {
   // Delete a category by ID using Sequelize destroy method
   try {
     const categoryData = await Category.destroy({
       where: {
-        id: req.params.id
-      }
+        id: req.params.id,
+      },
     });
 
     // If no category found, send not found response and exit
     if (!categoryData) {
-      res.status(404).json({ message: 'No category found with this id!' });
+      res.status(404).json({ message: "No category found with this id!" });
       return;
     }
 
