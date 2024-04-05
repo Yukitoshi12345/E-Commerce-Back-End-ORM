@@ -6,10 +6,17 @@ const routes = require("./routes");
 // Import the sequelize connection from the configuration file
 const sequelize = require("./config/connection");
 
+// Import the custom cLog middleware from the middleware/clog.js file
+const { clog } = require("./middleware/clog");
+
 // Create an Express application instance
 const app = express();
 // Define the port number to listen on. Use environment variable if available, otherwise default to 3001
 const PORT = process.env.PORT || 3001;
+
+// Import custom middleware, "clog"
+// Apply the custom clog middleware to log request details
+app.use(clog);
 
 // Configure middleware to parse JSON data in request body
 app.use(express.json());
