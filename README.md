@@ -13,7 +13,8 @@ As an internet retail manager, you understand the fierce competition in the e-co
 - [Test Instruction](#test-instruction)
 - [Video](#video)
 - [Output](#output)
-- [Installation](#installation)
+- [Deployed Application](#deployed-application)
+- [Central Grader Comments](#central-grader-comments)
 - [License](#license)
 
 ## User Story
@@ -121,10 +122,28 @@ Here's a step-by-step guide to setting up your e-commerce API:
 - Open GET routes for categories, products, and tags. Verify that the data is displayed in well-formatted JSON, matching your acceptance criteria.
 - Test POST, PUT, and DELETE routes to create, update, and delete data. Ensure these actions are successfully reflected in your database.
 
-## Installation
+## Deployed Application
 
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
 [https://github.com/yukitoshi12345/E-Commerce-Back-End-ORM/](https://github.com/yukitoshi12345/E-Commerce-Back-End-ORM)
+
+## Central Grader Comments
+
+Grade: 100/100
+
+Hi Yukitoshi,
+
+Congratulations on completing the E-Commerce Back End ORM challenge! Your application successfully meets all the outlined requirements for the Challenge instructions. It impressively includes detailed column definitions for all 4 models and robust implementation of essential API routes. You've effectively integrated GET routes to retrieve data for all categories, all products, all tags, as well as single categories, products, and tags. Moreover, your application seamlessly handles POST routes for creating new categories, products, and tags, along with PUT routes for updating existing data and DELETE routes for removals.
+
+Your walkthrough video was exceptionally well-executed. It provides clear guidance on setting up the database schema from the MySQL shell, seeding the database from the command line, and starting the server. I particularly appreciated the detailed demonstrations of GET routes for products and single products, as well as thorough testing of POST, PUT, and DELETE routes for products using Insomnia.
+
+I'm pleased to note the significant improvements in your video submission, which now includes comprehensive demonstrations of GET routes for all categories, all tags, single categories, and single tags. Additionally, the testing of POST, PUT, and DELETE routes for categories and tags using Insomnia was well-documented and effectively showcased.
+
+Your repository features an exemplary README with a clear project description and a link to the informative walkthrough video.
+
+Your dedication and hard work are evident, and I encourage you to continue your impressive efforts!
+
+- SF, Centralized Grading
 
 ## License
 
